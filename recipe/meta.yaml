@@ -39,11 +39,17 @@ test:
     - py.test -vx --doctest-modules --pyargs datashape
 
 about:
-  home: http://datashape.readthedocs.org/en/latest/
+  home: http://datashape.pydata.org
   license: BSD 2-Clause
   license_file: LICENSE
   summary: 'A data description language.'
   license_family: BSD
+  description: |
+    Datashape is a data layout language for array programming.
+    It is designed to describe in-situ structured data without requiring
+    transformation into a canonical form.
+  doc_url: http://datashape.readthedocs.org/en/latest
+  doc_source_url: https://github.com/blaze/datashape/blob/master/docs/source/index.rst
   dev_url: https://github.com/blaze/datashape
 
 extra:
