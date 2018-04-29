@@ -36,6 +36,17 @@ test:
   requires:
     - pytest
     - mock
+    # Use numpy 1.11 due to numpy 1.14 failures:
+    # https://github.com/blaze/datashape/issues/232
+    # =================================== FAILURES ===================================
+    # ________________________________ test_validate _________________________________
+    #
+    #     def test_validate():
+    #         assert validate(int, 1)
+    # >       assert validate('int', 1)
+    # E       AssertionError: assert False
+    # E        +  where False = validate('int', 1)
+    - numpy 1.11
 
   commands:
     - py.test -vx --doctest-modules --pyargs datashape
