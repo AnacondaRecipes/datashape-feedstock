@@ -9,8 +9,9 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://github.com/blaze/{{ name }}/archive/{{ version }}.tar.gz
   sha256: c266c5803dde48b9fa8d8ee51b5b5979ef77443060e32db2d225b72648c638a5
-  patches:
-    - 0001-Add-compatibility-for-AST-changes-in-Python-3.7.patch
+  # Probably not needed AST changes were dropped before release.
+  # patches:
+  #   - 0001-Add-compatibility-for-AST-changes-in-Python-3.7.patch
 
 build:
   number: 1
